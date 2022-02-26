@@ -1,0 +1,71 @@
+.form-group_checkbox{
+    margin-top: 1rem ;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--yellow); 
+    display: inline-block;
+}
+
+.checkbock_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilizando o checkbox */
+.checkbock_label input[type="checkbox"] {
+    /* removendo a aparencia do checkbox */
+    appearance: none; 
+    --webkit-appearance: none;
+
+    /* Defindo tamanho e largura */
+    width: 1rem;
+    height: 1rem;
+
+    /* Alterando cor de fundo e inserindo bordas */
+    background: var(--background);
+    border: 1px solid var(--text-title);
+    border-radius: 4px;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+}
+
+.checkbock_label input[type="checkbox"]:after {
+    /* Adiciona o icone de checked importado do font awesome*/
+    font-family: "Font Awesome 6 free";
+    font-weight: 600;
+    content: "";
+    font-size: 1rem;
+    display: none;
+}
+
+.checkbock_label input[type="checkbox"]:checked{
+    background: var(--yellow);    
+}
+
+.checkbock_label input[type="checkbox"]:checked:after{
+    /* deixa o icone visível */
+    display: block;    
+}
+
+.checkbock_label span{
+    padding-left: 0.5rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+}

@@ -1,0 +1,74 @@
+.form{
+    margin-top: 1rem;
+}
+
+.form_label{
+    margin-top: 1rem;
+    display: block;
+
+}
+
+/* Relativo para ajustar o svg */
+.form-group{
+    display: flex;
+    position: relative;
+}
+
+.form-group input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+/* Posicionando o svg */
+.form_input_image{
+    position: absolute;
+    align-self: center;
+    left:0.6rem;
+}
+
+/* estilo padrão para os inputs */
+.form-input{
+    width: 100%;
+    padding: 0.8rem 2.2rem;
+    background-color: var(--background);
+    border: 2px solid var(--text-title);
+    border-radius:4px;
+    color: var(--text-title);
+}
+.form-input:focus{
+    border-color: var(--yellow);       
+}
+
+.label_password{
+    margin-top: 1rem;
+}
+
+.form_input_button{
+    border: 0;
+    position: absolute;
+    align-self: center;
+    right: 0.6rem;
+}
+
+@media screen and (min-width: 720px){
+    .form-input{
+        background: var(--form-background);
+    }
+
+    .form{
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+    }
+    
+}
+
+@media  screen and (min-width: 1024) {
+    .form-group:focus{
+        border: 0;
+        border: 4px solid var(--yellow);
+    }
+}
